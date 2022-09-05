@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f4f4f4;
+}
+.card {
+  background-color: white;
+  width: 800px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  position: relative;
+}
+.card::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  bottom: -11px;
+  left: 0;
+}
+.pic {
+  flex: 49%;
+  text-align: center;
+  position: relative;
+  margin-right: 10px;
+}
+.pic::before {
+  height: 118%;
+  width: 1px;
+  background-color: rgba(199, 197, 197, 0.787);
+  content: "";
+  right: -4px;
+  position: absolute;
+  top: -20px;
+}
+.img img {
+  box-shadow: 0 0 10px rgb(176, 176, 176);
+  border-radius: 50%;
+  width: 120px;
+  flex: 1;
+}
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.pic > span {
+  width: 150px;
+  background-color: #f1f1f1;
+  height: 20px;
+  display: block;
+  position: relative;
+}
+.pic > span::after {
+  content: "";
+  position: absolute;
+  width: 75%;
+  background-color: #009688;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.pic p {
+  font-size: 12px;
+}
+.pic p span {
+  color: #009688;
+  display: inline-block;
+  margin-right: 2px;
+}
+.info {
+  margin-left: 10px;
+  position: relative;
+}
+.info::after {
+  content: "140 Days In The Ship";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+}
+.info p {
+  line-height: 1.7;
+}
+.spicial {
+  flex-wrap: wrap;
+}
+.spicial .main-heading{
+  background-color: #607d8b;
+  color: white;
+  padding: 5px;
+}
+.spicial p {
+  flex: 100%;
+  position: relative;
+}
+.spicial p:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(51, 51, 51, 0.512);
+  width: 100%;
+  height: 1px;
+  bottom: -18px;
+  left: 0;
+}
+.spicial p span:first-child {
+  color: #009688;
+  font-weight: bold;
+}
+.spicial p span:last-child {
+  color: #e92b66;
+  font-weight: bold;
+}
+.spicial .images img {
+  width: 80px;
+  position: relative;
+}
+.spicial .images img:nth-child(6),
+.spicial .images img:nth-child(10),
+.spicial .images img:nth-child(13), 
+.spicial .images img:nth-child(15),
+.spicial .images img:nth-child(17),
+.spicial .images img:nth-child(19) {
+  opacity: 0.2;
+}
+.spicial .two::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(119, 119, 119, 0.476);
+  bottom: -12px;
+  left: 0;
+}
